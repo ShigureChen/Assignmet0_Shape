@@ -19,7 +19,7 @@ public class Square extends Shape
         this.length = length;
         this.height = height;
     }
-    
+
     public String getName()
     {
         return name;
@@ -34,10 +34,15 @@ public class Square extends Shape
     {
         return height;
     }
-    
-    @Override
+
     public double getArea()
     {
-        return legth*height;
+        return length*height;
+    }
+
+    @Override
+    public void printDimensions()
+    {
+        System.out.println("length: " + length + "\nheight: " + height);
     }
 }

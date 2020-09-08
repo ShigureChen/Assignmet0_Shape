@@ -1,7 +1,12 @@
 public class Shape
 {
     private String name;
-    
+
+    public Shape()
+    {
+        name = "NULL";
+    }
+
     public Shape(String name)
     {
         this.name = name;

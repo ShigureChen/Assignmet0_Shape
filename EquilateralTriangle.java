@@ -30,6 +30,13 @@ public class EquilateralTriangle extends Triangle
     @Override
     public double getArea()
     {
-        return (Math.sqrt((side*3)^2))/4;
+        area = (Math.sqrt((side*3)*(side*3)))/4;
+        return area;
+    }
+
+    @Override
+    public void printDimensions()
+    {
+        System.out.println("side: " + side + "\narea: " + area);
     }
 }

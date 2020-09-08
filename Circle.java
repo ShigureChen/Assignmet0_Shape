@@ -30,6 +30,12 @@ public class Circle extends Shape
     @Override
     public double getArea()
     {
-        return radius*3.14159;
+        return radius*radius*3.14159;
+    }
+
+    @Override
+    public void printDimensions()
+    {
+        System.out.println("radius: " + radius);
     }
 }
